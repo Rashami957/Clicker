@@ -1,0 +1,12 @@
+create database if not exists clicker;
+use clicker;
+
+drop table if exists responses;
+create table responses(choice varchar(1),count int);
+
+insert into responses values('a',0);
+insert into responses values('b',0);
+insert into responses values('c',0);
+insert into responses values('d',0);
+
+select*from responses;
